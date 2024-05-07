@@ -1,0 +1,91 @@
+/* ==UserStyle==
+@name           Whale Scrapbook - Dark
+@namespace      blobcat
+@version        1.0
+@description    Brings dark mode to Naver Whale's Scrapbook (works in sidebar!)
+@author         blobcat
+@preprocessor   stylus
+@updateURL      https://github.com/blobcatz/userstyles/raw/main/dark-whale-scrapbook.user.css
+==/UserStyle== */
+@-moz-document domain("sidebar.scrapbook.naver.com"), domain("scrapbook.naver.com") {
+	:root {
+		--mdc-theme-surface: #181a1b;
+	}
+	html,
+	.search_header,
+	.mdc-text-field__input,
+	.feed-edit section .mdc-text-field:focus-within,
+	.suggestions {
+		background: var(--mdc-theme-surface) !important;
+	}
+	*:not(.mdc-chip__text),
+	.LogoTitle_logo_img_20bBF .LogoTitle_logo_text_3Ssrv {
+		color: white !important;
+	}
+	.svg-icon--search-input,
+	.svg-icon--add-item,
+	.mdc-icon-button img,
+	.mdc-icon-button svg {
+		filter: invert(1);
+	}
+	.svg-icon--back,
+	.svg-icon--more-btn,
+	.search_box .svg-icon--back,
+	.svg-icon--close {
+		filter: none !important;
+	}
+	.feed-edit section .category-selector > button,
+	.feed-edit section .mdc-text-field,
+	.profile_container,
+	main.settings section,
+	.mdc-top-app-bar.app_header,
+	.card_info,
+	.app_header .category-selector > button {
+		border-color: #393e40;
+		border-bottom-color: #393e40 !important;
+	}
+	.end_txt_box:after,
+	.mdc-top-app-bar.memo:after,
+	.mdc-top-app-bar.selection:after,
+	.mdc-top-app-bar.settings-category:after,
+	.mdc-top-app-bar.settings-channel:after,
+	.mdc-top-app-bar.settings-import:after,
+	.selection.selection:after {
+		background-color: #393e40;
+	}
+	.mdc-list-divider {
+		border-bottom-color: #ffffff1f;
+	}
+	.card_date {
+		color: #bbb !important;
+	}
+	.memo-edit--tags .vue-simple-suggest.designed .input-wrapper .tagsearch .svg-icon--label,
+	.memo-edit--tags .vue-simple-suggest.designed .input-wrapper .tagsearch input,
+	.memo div[contenteditable="true"] {
+		background: transparent;
+	}
+	.memo-edit--tags .mdc-chip-set .mdc-chip {
+		color: #ababab !important;
+	}
+	.card_info .tag_area a,
+	.memo-edit--tags .mdc-chip-set .mdc-chip,
+	.feed-edit section.feed-edit--tags .mdc-chip {
+		background: #1f2123;
+		border: none;
+	}
+	.mdc-dialog__button {
+		border-color: transparent;
+	}
+	.mdc-dialog__button:focus,
+	.mdc-dialog__button:hover {
+		background-color: #ffffff1f;
+	}
+	.search_box input,
+	.search_box .mdc-text-field {
+		background: #202324 !important;
+		border-radius: 20px;
+	}
+	.search_suggest li:hover {
+		background-color: #1c1e1f !important;
+	}
+}
